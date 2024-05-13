@@ -39,7 +39,7 @@ public class LottoService {
         this.winnerRepository = winnerRepository;
     }
 
-    @Getter
+    /*@Getter
     private int[] winningNumbers;
 
     @PostConstruct
@@ -120,7 +120,7 @@ public class LottoService {
                 }
             }
         };
-    }
+    }*/
 
     public Lotto generateLotto() {
         // 발행된 로또 티켓중 증복을 허용합니다
@@ -137,7 +137,7 @@ public class LottoService {
         return lottoRepository.save(lotto);
     }
 
-    /*public void processWinners() {
+    public void processWinners() {
         List<Lotto> lottos = lottoRepository.findAll();
 
         int[] winningNumbers = random
@@ -172,7 +172,7 @@ public class LottoService {
             prevCount = entry.getValue();
             winnerRepository.save(winner);
         }
-    }*/
+    }
 }
 
 

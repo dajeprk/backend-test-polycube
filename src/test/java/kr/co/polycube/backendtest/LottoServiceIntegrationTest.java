@@ -31,7 +31,7 @@ public class LottoServiceIntegrationTest {
         winnerRepository.deleteAll();
     }
 
-    /*@Test
+    @Test
     public void testProcessWinners() {
         for(int i = 0; i < 100; i++) {
             lottoService.generateLotto();
@@ -44,5 +44,5 @@ public class LottoServiceIntegrationTest {
         for(Winner winner : winners) {
             System.out.println(winner.getLotto_id() +  " " + winner.getRank());
         }
-    }*/
+    }
 }
